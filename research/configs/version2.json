@@ -1,0 +1,277 @@
+{
+ "common": {
+  "initial_weeks": 4,
+  "threshold": 0.5,
+  "embedding": "TF-IDF(1-2gram,25k)->SVD96->L2, fit on weeks 1-4 only",
+  "l2": 0.001,
+  "knn_k": 10,
+  "pseudo_label_tau": 0.9,
+  "r1_half_life_weeks": 8,
+  "r1_allocation": "random 0.2 / uncertainty 0.4 / novelty remainder",
+  "seeds_for_stochastic": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "settings": [
+  {
+   "method": "R1",
+   "period": 1,
+   "budget": 0.01,
+   "version": "V2",
+   "variant": "full"
+  },
+  {
+   "method": "R1",
+   "period": 2,
+   "budget": 0.01,
+   "version": "V2",
+   "variant": "full"
+  },
+  {
+   "method": "R1",
+   "period": 4,
+   "budget": 0.01,
+   "version": "V2",
+   "variant": "full"
+  },
+  {
+   "method": "R1",
+   "period": 1,
+   "budget": 0.05,
+   "version": "V2",
+   "variant": "full"
+  },
+  {
+   "method": "R1",
+   "period": 2,
+   "budget": 0.05,
+   "version": "V2",
+   "variant": "full"
+  },
+  {
+   "method": "R1",
+   "period": 4,
+   "budget": 0.05,
+   "version": "V2",
+   "variant": "full"
+  },
+  {
+   "method": "R1",
+   "period": 1,
+   "budget": 0.1,
+   "version": "V2",
+   "variant": "full"
+  },
+  {
+   "method": "R1",
+   "period": 2,
+   "budget": 0.1,
+   "version": "V2",
+   "variant": "full"
+  },
+  {
+   "method": "R1",
+   "period": 4,
+   "budget": 0.1,
+   "version": "V2",
+   "variant": "full"
+  }
+ ],
+ "ablations": [
+  {
+   "method": "R1",
+   "period": 1,
+   "budget": 0.01,
+   "version": "V2",
+   "variant": "no_novelty"
+  },
+  {
+   "method": "R1",
+   "period": 2,
+   "budget": 0.01,
+   "version": "V2",
+   "variant": "no_novelty"
+  },
+  {
+   "method": "R1",
+   "period": 4,
+   "budget": 0.01,
+   "version": "V2",
+   "variant": "no_novelty"
+  },
+  {
+   "method": "R1",
+   "period": 1,
+   "budget": 0.05,
+   "version": "V2",
+   "variant": "no_novelty"
+  },
+  {
+   "method": "R1",
+   "period": 2,
+   "budget": 0.05,
+   "version": "V2",
+   "variant": "no_novelty"
+  },
+  {
+   "method": "R1",
+   "period": 4,
+   "budget": 0.05,
+   "version": "V2",
+   "variant": "no_novelty"
+  },
+  {
+   "method": "R1",
+   "period": 1,
+   "budget": 0.1,
+   "version": "V2",
+   "variant": "no_novelty"
+  },
+  {
+   "method": "R1",
+   "period": 2,
+   "budget": 0.1,
+   "version": "V2",
+   "variant": "no_novelty"
+  },
+  {
+   "method": "R1",
+   "period": 4,
+   "budget": 0.1,
+   "version": "V2",
+   "variant": "no_novelty"
+  },
+  {
+   "method": "R1",
+   "period": 1,
+   "budget": 0.01,
+   "version": "V2",
+   "variant": "no_decay"
+  },
+  {
+   "method": "R1",
+   "period": 2,
+   "budget": 0.01,
+   "version": "V2",
+   "variant": "no_decay"
+  },
+  {
+   "method": "R1",
+   "period": 4,
+   "budget": 0.01,
+   "version": "V2",
+   "variant": "no_decay"
+  },
+  {
+   "method": "R1",
+   "period": 1,
+   "budget": 0.05,
+   "version": "V2",
+   "variant": "no_decay"
+  },
+  {
+   "method": "R1",
+   "period": 2,
+   "budget": 0.05,
+   "version": "V2",
+   "variant": "no_decay"
+  },
+  {
+   "method": "R1",
+   "period": 4,
+   "budget": 0.05,
+   "version": "V2",
+   "variant": "no_decay"
+  },
+  {
+   "method": "R1",
+   "period": 1,
+   "budget": 0.1,
+   "version": "V2",
+   "variant": "no_decay"
+  },
+  {
+   "method": "R1",
+   "period": 2,
+   "budget": 0.1,
+   "version": "V2",
+   "variant": "no_decay"
+  },
+  {
+   "method": "R1",
+   "period": 4,
+   "budget": 0.1,
+   "version": "V2",
+   "variant": "no_decay"
+  },
+  {
+   "method": "R1",
+   "period": 1,
+   "budget": 0.01,
+   "version": "V2",
+   "variant": "no_random"
+  },
+  {
+   "method": "R1",
+   "period": 2,
+   "budget": 0.01,
+   "version": "V2",
+   "variant": "no_random"
+  },
+  {
+   "method": "R1",
+   "period": 4,
+   "budget": 0.01,
+   "version": "V2",
+   "variant": "no_random"
+  },
+  {
+   "method": "R1",
+   "period": 1,
+   "budget": 0.05,
+   "version": "V2",
+   "variant": "no_random"
+  },
+  {
+   "method": "R1",
+   "period": 2,
+   "budget": 0.05,
+   "version": "V2",
+   "variant": "no_random"
+  },
+  {
+   "method": "R1",
+   "period": 4,
+   "budget": 0.05,
+   "version": "V2",
+   "variant": "no_random"
+  },
+  {
+   "method": "R1",
+   "period": 1,
+   "budget": 0.1,
+   "version": "V2",
+   "variant": "no_random"
+  },
+  {
+   "method": "R1",
+   "period": 2,
+   "budget": 0.1,
+   "version": "V2",
+   "variant": "no_random"
+  },
+  {
+   "method": "R1",
+   "period": 4,
+   "budget": 0.1,
+   "version": "V2",
+   "variant": "no_random"
+  }
+ ],
+ "runs": 45,
+ "ablation_runs": 135
+}

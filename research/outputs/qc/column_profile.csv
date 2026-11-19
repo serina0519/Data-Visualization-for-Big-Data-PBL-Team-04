@@ -1,0 +1,6 @@
+column,dtype,missing,unique
+uid,str,0,23558
+prompt,str,257,22179
+source,str,0,28
+timestamp,str,0,20850
+label,int64,0,2

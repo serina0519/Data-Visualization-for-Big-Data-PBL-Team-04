@@ -1,0 +1,38 @@
+{
+  "rows": 23558,
+  "time_start": "2023-02-28 23:59:59+00:00",
+  "time_end": "2023-12-25 01:59:42.497710705+00:00",
+  "origin_utc": "2023-02-28 00:00:00+00:00",
+  "calendar_weeks": 43,
+  "observed_weeks": 43,
+  "initial_rows": 2050,
+  "evaluation_rows": 21508,
+  "initial_weeks": 4,
+  "missing_prompts": 257,
+  "repeated_text_rows": 1390,
+  "conflicting_text_groups": 0,
+  "long_outlier_fence_initial": 3346.25,
+  "long_outliers_retained": 4525,
+  "positives": 3902,
+  "input_sha256": "4d93fc87eb1721f29759f3c8942deb38cbdda4e17d8612bc1201396a1112633e",
+  "length_summary": {
+    "count": 23558.0,
+    "mean": 1523.1513710841327,
+    "std": 4266.738017455308,
+    "min": 0.0,
+    "1%": 0.0,
+    "5%": 6.0,
+    "50%": 356.0,
+    "95%": 4703.149999999998,
+    "99%": 11981.720000000001,
+    "max": 208668.0
+  },
+  "scheduled_updates": {
+    "1": 39,
+    "2": 19,
+    "4": 9
+  },
+  "incomplete_tail_policy": "evaluate all rows; do not update on incomplete cycles",
+  "exclusions": 0,
+  "missing_prompt_policy": "retain with fixed sentinel"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "initial_only_tfidf_svd_word",
+  "dimension": 96,
+  "initial_explained_variance": 0.3637075357648272,
+  "vocabulary_size": 25000,
+  "zero_vectors": 969,
+  "no_text_truncation": true,
+  "fit_weeks": [
+    1,
+    4
+  ]
+}
